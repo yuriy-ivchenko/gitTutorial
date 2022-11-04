@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maket-from-body</title>
+    <style>
+        * {
+  box-sizing: border-box; 
+  text-decoration: none;
+  list-style:none;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+    min-width: 100vm;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: red;
+  margin: 0;
+}
+header,footer{
+    min-width: 100vh;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    background-color: bisque;
+}
+
+nav{
+     display: flex;
+    align-items: center;
+    background-image: url(./img/nav-triangle-5.png);
+    background-repeat: repeat-x;
+}
+ul{
+       display: flex;  
+       padding-right: 15px;   
+}
+li{
+    min-width: 25px;;
+    display: flex;  
+    
+}
+nav a {
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  margin:2px;
+  display: flex;
+}
+.main-nav li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+main{
+    flex: 1 1 auto;
+    background-color: limegreen;
+   
+}
+section{
+    
+    min-height: 20vh;
+    display: flex;
+    background-color: aliceblue;
+    margin-bottom:1px;
+    justify-content: center;
+}
+.main-nav {
+    min-width: 100%;
+    height:50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: orangered;
+    color: white;
+    border-radius: 3px;    
+    font-family: sans-serif;
+    
+   
+  }
+  .main-nav > ul {
+    
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    
+    display: flex;
+    flex: 1;
+  }
+  .main-nav li {
+    margin-right: 1em;
+  }
+  .main-nav li a{
+   color: white;
+  }
+  
+  .main-nav > form {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+  }
+  .main-nav input {
+    flex: 1;
+  }
+  .main-nav button {
+    background: white;
+    border: 0;
+    border-radius: 1em;
+    color: orangered;
+    padding: 0 1em;
+    margin-left: .3em;
+  }
+  .logo{
+    position: relative;
+	top: 0px;
+    left:10px;
+    width: 100px;
+    border:2px ridge red;
+    background-color: white;
+    border-radius: 15px;
+    padding:6px;
+    margin:12px;
+   
+  }
+  .nav img{
+	position: relative;
+	top: -48px;
+}
+#nav{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+ @media screen and (max-width: 575px) {
+   .main-nav {
+     flex-direction: column;
+   }
+   .main-nav ul {
+     flex-direction: row; /* Change this to 'column' to stack the links */
+     margin-bottom: 1em;
+   }
+  }
+    </style>
+</head>
+<body>
+   <header>
+        
+            <nav class="main-nav"> 
+                
+        <ul>
+            <li>             <div  class="logo"><a href=""><img src="./img/logo.gif" alt="logo" width="80" > </a> 
+  </li>
+          <li><h1><a href="">М І Й &nbsp; Р О Д О В І Д </a></h1> </li>
+          
+        </ul> 
+          <ul id="nav">  
+            <li><a href="">Home</a> </li>
+            <li><a href="">Products</a> </li>
+            <li><a href="">Services</a> </li>
+            
+            </ul>  
+        
+      </nav>
+
+   </header>
+   
+   <main>
+    
+    <section>4-11111====</section>
+    <section>4-2</section>
+    <section>4-3</section>
+    <section>4-4</section>
+
+   </main> 
+   <footer>
+    <nav>
+        <ul>
+        <li> <a href="">a11111---2222 /</a> </li>
+        <li><a href="">b2222222222</a> /</li>
+        <li><a href="">c333333</a>/ </li>
+        <li><a href="">d44444</a>/</li>
+        <li><a href="">e5555555555</a> </li>
+       </ul>
+    </nav> <div> f1</div>
+    <div>f2</div>
+    <div>f3</div></footer>
+</body>
+</html>
